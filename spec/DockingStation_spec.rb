@@ -1,5 +1,5 @@
 require 'DockingStation.rb'
 
 describe DockingStation do
-
+   it { should respond_to :release_bike}
 end
