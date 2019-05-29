@@ -1,0 +1,17 @@
+
+This is what the error looks like when you try to make a instance of a class without any class available. The type of error is NameError.
+
+2.6.3 :001 > docking_station = DockingStation.new
+Traceback (most recent call last):
+        4: from /Users/student/.rvm/rubies/ruby-2.6.3/bin/irb:23:in `<main>'
+        3: from /Users/student/.rvm/rubies/ruby-2.6.3/bin/irb:23:in `load'
+        2: from /Users/student/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):1
+NameError (uninitialized constant DockingStation)
+
+
+The filepath where the error happened is: /lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11
+
+Error line number is: 11.
+
+One way of solving it would be to write a DockingStation class to which the code can refer to.
